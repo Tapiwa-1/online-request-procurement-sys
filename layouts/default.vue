@@ -20,10 +20,10 @@
                 </div>
                 <PopoverGroup as="nav" class="hidden space-x-10 md:flex">
                     <router-link to="/"
-                        class="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-200">Jobs</router-link>
-                    <router-link to="/company-reviews"
-                        class="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-200">Company
-                        Reviews</router-link>
+                        class="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-200">Home</router-link>
+                    <router-link to="/suppliers"
+                        class="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-white dark:hover:text-gray-200">Supplies
+                    </router-link>
 
                     <Popover class="relative" v-slot="{ open }">
                         <PopoverButton
@@ -42,7 +42,7 @@
                                 class="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
                                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                     <div class="relative grid gap-6 bg-white  px-5 py-6 sm:gap-8 sm:p-8 dark:bg-gray-800">
-                                        <a v-for="item in resources" :key="item.name" :href="item.href"
+                                        <NuxtLink v-for="item in resources" :key="item.name" :to="item.href"
                                             class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50 dark:hover:bg-gray-600">
                                             <component :is="item.icon" class="h-6 w-6 flex-shrink-0 text-indigo-600"
                                                 aria-hidden="true" />
@@ -52,7 +52,7 @@
                                                 <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">{{ item.description
                                                 }}</p>
                                             </div>
-                                        </a>
+                                        </NuxtLink>
                                     </div>
                                     <div class="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8 dark:bg-gray-900">
                                         <div>
@@ -142,9 +142,10 @@
                             <a href="#"
                                 class="text-base font-medium text-gray-900 dark:text-gray-50 hover:text-gray-700 dark:hover:text-gray-300">Company
                                 Reviews</a>
-                            <a v-for="item in resources" :key="item.name" :href="item.href"
-                                class="text-base font-medium text-gray-900 hover:text-gray-700 dark:text-gray-50 dark:hover:text-gray-300h ">{{
-                                    item.name }}</a>
+                            <NuxtLink v-for="item in resources" :key="item.name" :to="item.href"
+                                class="text-base font-medium text-gray-900 hover:text-gray-700 dark:text-gray-50 dark:hover:text-gray-300h ">
+                                {{
+                                    item.name }}</NuxtLink>
                         </div>
                         <div>
                             <NuxtLink to="register"
@@ -189,26 +190,20 @@ const resources = [
     {
         name: 'Help Center',
         description: 'Get all of your questions answered in our forums or contact support.',
-        href: '#',
+        href: '/call-center',
         icon: LifebuoyIcon,
     },
     {
-        name: 'Guides',
-        description: 'Learn how to maximize our platform to get the most out of it.',
-        href: '#',
+        name: 'Becone a supplier',
+        description: 'Learn how to maximize our platform to get the most out of business by becoming a supplier.',
+        href: '/become-supplier',
         icon: BookmarkSquareIcon,
     },
-    {
-        name: 'Events',
-        description: 'See what meet-ups and other events we might be planning near you.',
-        href: '#',
-        icon: CalendarIcon,
-    },
-    { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+    { name: 'Security', description: 'Understand Terms and Conditions e-tengai.', href: 'general-page', icon: ShieldCheckIcon },
 ]
 const recentPosts = [
-    { id: 1, name: 'Boost your conversion rate', href: '#' },
-    { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-    { id: 3, name: 'Improve your customer experience', href: '#' },
+    { id: 1, name: 'What is procurement', href: '/general-page' },
+    { id: 2, name: 'Rules and Laws of procurement', href: '/general-page' },
+    { id: 3, name: 'About e-Tengai', href: '/About' },
 ]
 </script>

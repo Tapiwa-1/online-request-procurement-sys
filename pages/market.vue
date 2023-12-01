@@ -22,15 +22,12 @@
                 </li>
 
             </ul>
-            <HomeTabCard />
+            <!-- <HomeTabCard /> -->
         </div>
 
 
     </div>
 </template>
 <script>
-import {
-    ArrowPathIcon,
-    InboxStackIcon
-} from '@heroicons/vue/24/outline'
+
 </script>

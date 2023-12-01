@@ -1,0 +1,4 @@
+<template>
+    <NuxtLayout />
+    About
+</template>
