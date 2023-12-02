@@ -22,15 +22,18 @@
                 </li>
 
             </ul>
-            <HomeTabCard />
+            <HomeTabCard>
+                <template #header>
+                    <h1>Bids Available</h1>
+                </template>
+                <BidCard v-for="i in 10" key="i" />
+            </HomeTabCard>
         </div>
 
 
     </div>
 </template>
 <script>
-import {
-    ArrowPathIcon,
-    InboxStackIcon
-} from '@heroicons/vue/24/outline'
+
+
 </script>

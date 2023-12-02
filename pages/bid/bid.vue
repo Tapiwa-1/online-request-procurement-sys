@@ -1,0 +1,3 @@
+<template>
+    bid Sample
+</template>

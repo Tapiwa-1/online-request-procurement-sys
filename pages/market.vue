@@ -22,7 +22,12 @@
                 </li>
 
             </ul>
-            <!-- <HomeTabCard /> -->
+            <HomeTabCard>
+                <template #header>
+                    <h1>Current Market</h1>
+                </template>
+                <BidCard />
+            </HomeTabCard>
         </div>
 
 

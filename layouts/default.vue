@@ -60,9 +60,10 @@
                                             </h3>
                                             <ul role="list" class="mt-4 space-y-4">
                                                 <li v-for="post in recentPosts" :key="post.id" class="truncate text-base">
-                                                    <a :href="post.href"
-                                                        class="font-medium text-gray-900 hover:text-gray-700 dark:text-gray-50 dark:hover:text-gray-200">{{
-                                                            post.name }}</a>
+                                                    <NuxtLink :to="post.href"
+                                                        class="font-medium text-gray-900 hover:text-gray-700 dark:text-gray-50 dark:hover:text-gray-200">
+                                                        {{
+                                                            post.name }}</NuxtLink>
                                                 </li>
                                             </ul>
                                         </div>
