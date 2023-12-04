@@ -91,10 +91,9 @@
                     <template v-else>
                         <NuxtLink to="/auth/login"
                             class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:text-blue-200 dark:hover:text-blue-500">
-                            Sign in</NuxtLink>
-                        <NuxtLink v-if="true" to="/auth/register"
-                            class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 dark:text-white dark:border-blue-500 dark:bg-transparent dark:hover:border-blue-100">
-                            Sign up</NuxtLink>
+                            <UserCircleIcon class="w-6 h-6 text-gray-800 dark:text-white font-bold" />
+                        </NuxtLink>
+
                     </template>
 
                 </div>
@@ -175,6 +174,7 @@ import {
     BookmarkSquareIcon,
     CalendarIcon,
     ChartBarIcon,
+    UserCircleIcon,
     CursorArrowRaysIcon,
     LifebuoyIcon,
     SunIcon,

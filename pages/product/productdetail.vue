@@ -2,10 +2,10 @@
     <NuxtLayout />
     <div class="container mx-auto pt-2 ">
 
-        <!-- -style="border: red solid 2px;" -->
+
         <div class="md:flex">
             <ul
-                class="flex-column  space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
+                class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
                 <li>
                     <NuxtLink to="/"
                         class="inline-flex items-center px-4 py-3 text-white  rounded-lg  w-full hover:text-gray-300 "
@@ -24,9 +24,9 @@
             </ul>
             <HomeTabCard>
                 <template #header>
-                    <h1>Bids Available</h1>
+                    <h1>Product Details </h1>
                 </template>
-                <BidCard v-for="i in 10" key="i" />
+                <ProductCardMoreDetails />
             </HomeTabCard>
         </div>
 

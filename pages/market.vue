@@ -8,14 +8,14 @@
                 class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
                 <li>
                     <NuxtLink to="/"
-                        class="inline-flex items-center px-4 py-3 text-white bg-blue-700 rounded-lg active w-full dark:bg-blue-600"
+                        class="inline-flex items-center px-4 py-3 text-white  rounded-lg  w-full hover:text-gray-300 "
                         aria-current="page">
                         Bids
                     </NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/market"
-                        class="inline-flex items-center px-4 py-3 text-white bg-blue-700 rounded-lg active w-full dark:bg-gray-600"
+                        class="inline-flex items-center px-4 py-3 text-white  rounded-lg  w-full hover:text-gray-300"
                         aria-current="page">
                         Market
                     </NuxtLink>
@@ -26,7 +26,7 @@
                 <template #header>
                     <h1>Current Market</h1>
                 </template>
-                <BidCard />
+                <ProductCard />
             </HomeTabCard>
         </div>
 
