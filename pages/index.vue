@@ -26,14 +26,66 @@
                 <template #header>
                     <h1>Bids Available</h1>
                 </template>
-                <BidCard v-for="i in 10" key="i" />
+                <BidCard v-for="bid in bids" key="bid.id" v-bind:-bid-data="bid" />
             </HomeTabCard>
         </div>
 
 
     </div>
 </template>
-<script>
+<script setup>
 
+const bids = ref([
+    {
+        id: 1,
+        item: "This is an item 1",
+        description: "This is summary of item 1 details"
+    },
+    {
+        id: 2,
+        item: "This is an item 2",
+        description: "This is summary of item 2 details"
+    },
+    {
+        id: 3,
+        item: "This is an item 3",
+        description: "This is summary of item 3 details"
+    },
+    {
+        id: 4,
+        item: "This is an item 4",
+        description: "This is summary of item 4 details"
+    },
+    {
+        id: 5,
+        item: "This is an item 5",
+        description: "This is summary of item 5 details"
+    },
+    {
+        id: 6,
+        item: "This is an item 6",
+        description: "This is summary of item 6 details"
+    },
+    {
+        id: 7,
+        item: "This is an item 7",
+        description: "This is summary of item 7 details"
+    },
+    {
+        id: 8,
+        item: "This is an item 8",
+        description: "This is summary of item 8 details"
+    },
+    {
+        id: 9,
+        item: "This is an item 9",
+        description: "This is summary of item 9 details"
+    },
+    {
+        id: 10,
+        item: "This is an item 10",
+        description: "This is summary of item 10 details"
+    },
+])
 
 </script>
