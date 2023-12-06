@@ -8,14 +8,14 @@
                 class="flex-column  space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
                 <li>
                     <NuxtLink to="/"
-                        class="inline-flex items-center px-4 py-3 text-white  rounded-lg  w-full hover:text-gray-300 "
+                        class="inline-flex items-center px-4 py-3 text-gray-800  rounded-lg  w-full dark:text-gray-50 hover:text-gray-300 "
                         aria-current="page">
                         Bids
                     </NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/market"
-                        class="inline-flex items-center px-4 py-3 text-white  rounded-lg  w-full hover:text-gray-300"
+                        class="inline-flex items-center px-4 py-3 text-gray-800   rounded-lg  w-full hover:text-gray-300 dark:text-gray-50 "
                         aria-current="page">
                         Market
                     </NuxtLink>

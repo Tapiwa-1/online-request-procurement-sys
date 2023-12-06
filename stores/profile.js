@@ -5,12 +5,12 @@ import { defineStore } from 'pinia'
 
 export const useProfileStore = defineStore('profile', {
   state: () => ({
-    id:null,
-    name:null,
-    email:null,
+    id:1,
+    name:'example name',
+    email:'example@gmail.com',
     image: null,
-    status:null,
-    mustVerifyEmail:null,
+    status:true,
+    mustVerifyEmail:true,
   }),
   // actions: {
   //   async editProfile(){

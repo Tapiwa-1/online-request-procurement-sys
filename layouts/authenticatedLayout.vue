@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <div class="overflow-hidden">
         <div v-if="false" class="p-4 text-sm text-green-700 bg-green-100  dark:bg-gray-800 dark:text-green-400"
             role="alert">
             <span class="font-medium">Success alert!</span> This is a message
         </div>
         <div class="w-full bg-gray-100 dark:bg-gray-900">
 
-            <div class="flex justify-between px-4 py-1 items-center">
+            <div class="flex justify-between px-4 py-1 items-center ">
                 <span class=" text-white text-4xl top-5 left-4 cursor-pointer">
                     <Bars3Icon class="w-6 h-6  bg-transparent text-gray-700 dark:text-gray-100 rounded-md"
                         @click="display = !display" />
