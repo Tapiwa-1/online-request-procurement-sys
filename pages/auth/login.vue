@@ -74,6 +74,7 @@ let errors = ref(null)
                     <Spinner v-if="true" />
                     Log in
                 </PrimaryButton>
+                <NuxtLink to="/admin/dashboard">skip</NuxtLink>
             </div>
         </div>
     </NuxtLayout>

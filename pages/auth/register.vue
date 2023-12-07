@@ -94,6 +94,7 @@ const register = async () => {
                     <Spinner v-if="true" />
                     Sign Up
                 </PrimaryButton>
+                <NuxtLink to="/admin/dashboard">skip</NuxtLink>
             </div>
         </div>
     </NuxtLayout>

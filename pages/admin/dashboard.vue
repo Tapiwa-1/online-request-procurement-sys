@@ -15,11 +15,7 @@
                             class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
                             <LogoNav />
                         </a>
-                        <a href="#"
-                            class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-                            <LogoNav />
 
-                        </a>
                     </div>
                 </div>
 
@@ -69,9 +65,10 @@
                         class="w-full max-w-full lg:max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                         <div class="flex items-center justify-between mb-4">
                             <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Top Users</h5>
-                            <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                            <NuxtLink to="/admin/users"
+                                class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
                                 View all
-                            </a>
+                            </NuxtLink>
                         </div>
                         <div class="flow-root">
                             <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
