@@ -77,7 +77,7 @@ const roles = ref([
 
 ])
 const tableMeta = ref({
-    heading: "Users",
+    heading: "Roles",
     url: null,
     urlName: "Add Role",
     addRole: true,

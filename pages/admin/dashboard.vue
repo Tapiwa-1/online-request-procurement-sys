@@ -83,7 +83,7 @@ const users = ref([
     { id: 1, name: "Farai Kanoda", email: "fkanoda@gmail.com", role: "Fin director" },
     { id: 1, name: "Gibson Wodzi", email: "gwodzi0@gmail.com", role: "Proc officer" },
 ])
-const username = "Tapiwa Motsi"
+const username = "John Doe"
 
 const tableMeta = ref({
     heading: "Users",

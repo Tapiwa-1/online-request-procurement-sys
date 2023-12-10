@@ -30,6 +30,7 @@
     "apexcharts": "^3.44.2",
     "axios": "^1.6.2",
     "flowbite": "^2.2.0",
-    "pinia": "^2.1.7"
+    "pinia": "^2.1.7",
+    "vue-advanced-cropper": "^2.8.8"
   }
 }

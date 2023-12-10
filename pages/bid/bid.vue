@@ -38,7 +38,7 @@
 const bidDetails = ref({
     bidImg: "~/assets/img/sample1.jpeg",
     bidInvitation: " RFP-2023-12-02-M1",
-    bidder: "ACME Technologies",
+    bidder: "Ministry of Local Government",
     bidDate: " 2023-12-02",
     bidProduct: "20 units of MacBook Air (M2)",
     bidDescription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eius autem! Ipsa officiis doloribus obcaecati autem omnis placeat voluptatem magni distinctio, repellat expedita, asperiores explicabo possimus fugit nihil minus eaque?"
